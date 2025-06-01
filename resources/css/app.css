@@ -1,3 +1,9 @@
+@import "./fonts.css";
 @import "tailwindcss" theme(static);
 @source "../views/";
 @source "../../app/";
+
+@theme {
+  --font-sans: "Inter Display", sans-serif;
+  /* --font-mono: "JetBrains Mono", monospace; */
+}

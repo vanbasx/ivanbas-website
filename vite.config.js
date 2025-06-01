@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite';
 import laravel from 'laravel-vite-plugin'
@@ -5,6 +7,14 @@ import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
   base: '/app/themes/sage/public/build/',
+  server: {
+    host: 'ivanbas.ddev.site',
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'ivanbas.ddev.site-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'ivanbas.ddev.site.pem')),
+    },
+    cors: true,
+  },
   plugins: [
     tailwindcss(),
     laravel({
