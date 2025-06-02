@@ -6,4 +6,22 @@
 @theme {
   --font-sans: "Inter Display", sans-serif;
   /* --font-mono: "JetBrains Mono", monospace; */
+
+  --breakpoint-*: initial;
+  --breakpoint-xs: 390px;
+  --breakpoint-sm: 500px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-xs: 0 4px 16px rgba(0, 0, 0, 0.06); 
+}
+
+.container {
+  @apply mx-auto px-2.5;
+}
+
+/* bottom footer */
+#app {
+  @apply grid grid-cols-[minmax(0,1fr)] grid-rows-[1fr_auto] min-h-[100dvh];
 }
