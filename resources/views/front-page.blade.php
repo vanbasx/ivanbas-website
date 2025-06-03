@@ -3,16 +3,17 @@
 @section('content')
 
 <section class="bg-zinc-50">
-  <div class="border-zinc-200 border-b h-15"></div>
+  <div class="border-zinc-200 border-b h-15.5"></div>
 
   <div class="mx-auto px-5 w-full max-w-330">
     <div class="py-30 border-x border-zinc-200">
       
       {{-- /label --}}
       <div class="flex items-center gap-1 bg-white shadow-xs mx-auto mb-3 px-3 py-1 rounded-full w-fit">
-        <div class="relative bg-green-200 rounded-full size-4 animate-pulse">
-          <div class="top-1/2 left-1/2 absolute bg-green-400 rounded-full size-2 -translate-x-1/2 -translate-y-1/2"></div>
-        </div>
+        <span class="relative flex size-2">
+          <span class="inline-flex absolute bg-green-400/70 rounded-full w-full h-full animate-ping"></span>
+          <span class="inline-flex relative bg-green-400 rounded-full size-2"></span>
+        </span>
         <span class="font-medium text-zinc-600 text-xs tracking-wide">
           Available to work
         </span>
@@ -33,9 +34,9 @@
 
       {{-- hero buttons --}}
       <div class="flex items-center gap-3 mx-auto w-fit">
-        <a href="" class="bg-black px-7 py-3.5 rounded-full font-bold text-white text-sm/5 uppercase tracking-wide">
+        <x-email-button>
           Book an intro call
-        </a>
+        </x-email-button>
         <a href="" class="bg-white px-7 py-3.5 border border-zinc-300 rounded-full font-bold text-zinc-950 text-sm/5 uppercase tracking-wide">
           Explore my Works
         </a>
