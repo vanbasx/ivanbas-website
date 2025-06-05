@@ -5,7 +5,7 @@
 
 @theme {
   --font-sans: "Inter Display", sans-serif;
-  /* --font-mono: "JetBrains Mono", monospace; */
+  --font-mono: "JetBrains Mono", monospace;
 
   --breakpoint-*: initial;
   --breakpoint-xs: 390px;
