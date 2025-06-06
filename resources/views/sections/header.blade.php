@@ -1,6 +1,6 @@
-<header class="top-0 left-1/2 z-20 fixed p-5 w-240 max-lg:w-full -translate-x-1/2">
+<header class="top-0 left-1/2 z-20 fixed p-5 max-sm:px-7 w-240 max-lg:w-full -translate-x-1/2">
   <div class="bg-white shadow-xs border border-zinc-200 rounded-3xl">
-    <div class="flex justify-between items-center p-5 w-full">
+    <div class="flex justify-between items-center p-5 max-sm:p-3 w-full">
       {{-- Logo --}}
       <a href="{{ home_url('/') }}" class="flex items-center gap-1.5">
         <img src="{{ Vite::asset('resources/images/icons/logo.svg') }}" alt="Website logo white cube">
