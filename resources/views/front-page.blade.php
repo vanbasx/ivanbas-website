@@ -21,7 +21,6 @@
 
       {{-- hero title --}}
       <h1 class="mx-auto mb-3 max-sm:mb-2.5 max-w-4xl max-sm:font-extrabold font-black text-zinc-950 max-sm:text-[40px]/11 max-md:text-5xl/12 max-lg:text-6xl/17 text-7xl/19 text-center uppercase text-balance tracking-tight">
-        {{-- High-Quality Websites Made for Leaders --}}
         High-Quality
         <span class="relative">
           Websites
@@ -51,16 +50,29 @@
       {{-- /hero buttons --}}
 
       {{-- hero slider --}}
-      <div class="before:top-0 after:top-0 after:right-0 before:left-0 before:absolute after:absolute relative before:bg-linear-to-r after:bg-linear-to-l before:from-zinc-50 after:from-zinc-50 before:to-zinc-50/0 after:to-zinc-50/0 mx-16 max-sm:mx-0 max-md:mx-4 max-lg:mx-15 max-sm:before:w-20 max-sm:after:w-20 max-md:before:w-30 max-md:after:w-30 before:w-60 after:w-60 h-45 max-lg:h-40 before:h-full after:h-full overflow-hidden">
-        <div class="flex items-center gap-6 max-sm:gap-3 h-full">
-          <img class="rounded-xl h-full object-cover" src="{{ Vite::asset('resources/images/h5.png') }}" alt="">
-          <img class="rounded-xl h-full object-cover" src="{{ Vite::asset('resources/images/h2.png') }}" alt="">
-          <img class="rounded-xl h-full object-cover" src="{{ Vite::asset('resources/images/h3.png') }}" alt="">
-          <img class="rounded-xl h-full object-cover" src="{{ Vite::asset('resources/images/h4.png') }}" alt="">
-          <img class="rounded-xl h-full object-cover" src="{{ Vite::asset('resources/images/h1.png') }}" alt="">
-        </div>
+      <div class="before:top-0 after:top-0 after:right-0 before:left-0 before:z-1 after:z-1 before:absolute after:absolute relative flex items-center before:bg-linear-to-r after:bg-linear-to-l before:from-zinc-50 after:from-zinc-50 before:to-zinc-50/0 after:to-zinc-50/0 mx-auto before:w-1/5 after:w-1/5 max-w-270 before:h-full after:h-full overflow-hidden">
+        @for ($i = 0; $i < 2; $i++)
+          <div class="flex items-center animate-marquee shrink-0" aria-hidden="true">
+            <div class="pr-6 max-md:pr-3 h-45 shrink-0">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h1.png') }}" alt="">
+            </div>
+            <div class="pr-6 max-md:pr-3 h-45 shrink-0">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h2.png') }}" alt="">
+            </div>
+            <div class="pr-6 max-md:pr-3 h-45 shrink-0">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h1.png') }}" alt="">
+            </div>
+            <div class="pr-6 max-md:pr-3 h-45 shrink-0">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h5.png') }}" alt="">
+            </div>
+            <div class="pr-6 max-md:pr-3 h-45 shrink-0">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h4.png') }}" alt="">
+            </div>
+          </div>
+        @endfor
       </div>
       {{-- hero slider --}}
+
 
     </div>
   </div>
