@@ -25,8 +25,8 @@
   <body @php(body_class('bg-zinc-100'))>
     @php(wp_body_open())
 
+    @include('sections.header')
     <div id="app">
-      @include('sections.header')
 
       <main>
         @yield('content')

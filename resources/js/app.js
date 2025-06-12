@@ -2,10 +2,19 @@ import.meta.glob([
   '../images/**',
   '../fonts/**',
 ]);
-
 import { gsap } from "gsap";
+import { ScrollSmoother } from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  ScrollSmoother.create({
+    content: '#app',
+    smooth: 1.5,
+    effects: true
+  });
 
   // function initMarquee() {
   //   const marquees = [...document.getElementsByClassName('marquee-item')];

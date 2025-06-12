@@ -16,7 +16,7 @@
 
   --shadow-xs: 0 4px 16px rgba(0, 0, 0, 0.06); 
 
-  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee: marquee 60s linear infinite;
 }
 
 @keyframes marquee {
@@ -35,4 +35,12 @@
 /* bottom footer */
 #app {
   @apply grid grid-cols-[minmax(0,1fr)] grid-rows-[1fr_auto] min-h-[100dvh];
+}
+
+.suptitle {
+  @apply block font-mono text-zinc-600 text-xs text-center uppercase tracking-tight;
+}
+
+.title {
+  @apply font-extrabold text-[40px]/12 text-center uppercase text-balance tracking-tight max-md:text-4xl/11 max-sm:text-[32px]/10 text-zinc-950;
 }

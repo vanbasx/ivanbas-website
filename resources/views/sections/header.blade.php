@@ -36,8 +36,8 @@
 
       {{-- Buttons --}}
       <div class="flex items-center gap-2">
-        <a href="#" class="bg-zinc-100 rounded-full size-10">
-
+        <a href="#" class="bg-zinc-100 rounded-full size-10 relative">
+          <img src="{{ Vite::asset('resources/images/icons/telegramm.svg') }}" alt="" class="absolute -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2 size-7">
         </a>
         <a href="#" class="bg-black px-5 py-2.5 rounded-full font-semibold text-white text-sm">
           Let’s work
