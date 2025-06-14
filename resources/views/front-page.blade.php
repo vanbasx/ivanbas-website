@@ -38,26 +38,26 @@
         @for ($i = 0; $i < 2; $i++)
           <div class="flex items-center animate-marquee will-change-transform shrink-0" aria-hidden="true">
             <div class="pr-6 max-md:pr-3 h-45 shrink-0">
-              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h1.png') }}" alt="">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/example1.webp') }}" alt="">
             </div>
             <div class="pr-6 max-md:pr-3 h-45 shrink-0">
-              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h2.png') }}" alt="">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/example2.webp') }}" alt="">
             </div>
             <div class="pr-6 max-md:pr-3 h-45 shrink-0">
-              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h1.png') }}" alt="">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/example3.webp') }}" alt="">
             </div>
             <div class="pr-6 max-md:pr-3 h-45 shrink-0">
-              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h5.png') }}" alt="">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/example4.webp') }}" alt="">
             </div>
             <div class="pr-6 max-md:pr-3 h-45 shrink-0">
-              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/h4.png') }}" alt="">
+              <img class="border border-zinc-100 rounded-lg max-sm:rounded-md h-full object-cover" src="{{ Vite::asset('resources/images/example5.webp') }}" alt="">
             </div>
           </div>
         @endfor
       </div>
       {{-- ruler --}}
       <div class="top-0 left-0 absolute flex flex-col justify-around h-full -translate-x-full select-none" aria-hidden="true">
-        @for ($i = 50; $i < 500; $i += 50)
+        @for ($i = 50; $i < 550; $i += 50)
           <div class="before:top-1/2 before:right-0.5 before:absolute relative before:bg-zinc-300 w-5 before:w-1 before:h-px before:-translate-y-1/2">
             <div class="pb-1 font-mono text-[8px] text-zinc-400 text-center -rotate-90">{{ $i }}</div>
           </div>
@@ -67,7 +67,7 @@
   </div>
 </section>
 
-<section class="py-31 max-lg:py-20">
+<section class="py-28 max-sm:py-16 max-lg:py-20">
   <div class="mx-auto px-2.5 max-w-295">
     {{-- about suptitle --}}
     <span class="mb-2.5 suptitle">
@@ -78,8 +78,8 @@
       Choose quality and see the results
     </h2>
     {{-- about cards --}}
-    <div class="gap-4 grid grid-cols-3 max-lg:grid-cols-1 max-lg:max-w-lg max-lg:mx-auto mb-12 max-sm:mb-8">
-      <article class="bg-white p-5 pb-8 rounded-xl">
+    <div class="gap-4 grid grid-cols-3 max-lg:grid-cols-1 max-lg:mx-auto mb-12 max-sm:mb-8 max-lg:max-w-lg">
+      <article class="bg-white p-5 pb-8 border border-zinc-200 border-dashed rounded-xl">
         <img src="{{ Vite::asset('resources/images/icons/star.svg') }}" alt="" class="mb-2.5 select-none">
         <p class="mb-2.5 font-semibold text-zinc-950 text-xl/6">
           Animation expert
@@ -89,7 +89,7 @@
         </p>
       </article>
 
-      <article class="bg-white p-5 pb-8 rounded-xl">
+      <article class="bg-white p-5 pb-8 border border-zinc-200 border-dashed rounded-xl">
         <img src="{{ Vite::asset('resources/images/icons/seo.svg') }}" alt="" class="mb-2.5 select-none">
         <p class="mb-2.5 font-semibold text-zinc-950 text-xl/6">
           SEO for growth
@@ -99,7 +99,7 @@
         </p>
       </article>
 
-      <article class="bg-white p-5 pb-8 rounded-xl">
+      <article class="bg-white p-5 pb-8 border border-zinc-200 border-dashed rounded-xl">
         <img src="{{ Vite::asset('resources/images/icons/timer.svg') }}" alt="" class="mb-2.5 select-none">
         <p class="mb-2.5 font-semibold text-zinc-950 text-xl/6">
           Launch fast, grow faster
@@ -121,5 +121,30 @@
   </div>
 </section>
 <div class="bg-zinc-50 border-y border-zinc-200 h-14" aria-hidden="true"></div>
+
+<section class="py-28 max-sm:py-16 max-lg:py-20">
+  <div class="mx-auto px-2.5 max-w-275 max-lg:max-w-140">
+    {{-- cases suptitle --}}
+    <span class="mb-2.5 suptitle">
+      Case Studies
+    </span>
+    {{-- cases title --}}
+    <h3 class="mx-auto mb-10 max-md:mb-6 max-w-md title">
+      Explore my works
+    </h3>
+    <div class="gap-5 grid grid-cols-2 max-lg:grid-cols-1">
+      <article class="relative bg-white shadow-xs p-4 max-sm:p-2 rounded-[28px] max-sm:rounded-[18px]">
+        <div class="before:top-0 before:left-0 before:absolute relative before:bg-gradient-to-b before:from-50% before:from-black/0 before:to-black/15 mb-4 max-sm:mb-2 rounded-2xl max-sm:rounded-[12px] w-full before:w-full before:h-full aspect-7/5 overflow-hidden select-none">
+          <img src="{{ Vite::asset('resources/images/example1.webp') }}" alt="" class="w-full h-full object-cover">
+          <span class="bottom-4 left-4 z-1 absolute px-3 py-1 border border-white rounded-full font-medium text-white text-xs/4 tracking-wide">
+            B2B
+          </span>
+        </div>
+        <a href="#" class="block before:top-0 before:left-0 px-3 py-2 max-sm:py-3 before:w-full before:h-full font-medium text-zinc-950 max-sm:text-lg/6 text-xl/7 text-pretty"> 
+          Modernizing the Online Identity of a Manufacturing Company
+        </a>
+      </article> 
+    </div>
+</section>
 
 @endsection
