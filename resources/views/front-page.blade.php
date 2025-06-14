@@ -143,7 +143,7 @@
         <a href="#" class="block before:top-0 before:left-0 px-3 py-2 max-sm:py-3 before:w-full before:h-full font-medium text-zinc-950 max-sm:text-lg/6 text-xl/7 text-pretty"> 
           Modernizing the Online Identity of a Manufacturing Company
         </a>
-      </article> 
+      </article>
     </div>
 </section>
 

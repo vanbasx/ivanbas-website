@@ -6,12 +6,12 @@ import laravel from 'laravel-vite-plugin'
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
-  base: '/app/themes/sage/public/build/',
+  base: '/app/public/wp-content/themes/sage/public/build/',
   server: {
-    host: 'ivanbas.ddev.site',
+    host: 'ivanbas.local',
     https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'ivanbas.ddev.site-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'ivanbas.ddev.site.pem')),
+      key: fs.readFileSync(path.resolve(__dirname, 'ivanbas.local-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'ivanbas.local.pem')),
     },
     cors: true,
   },
