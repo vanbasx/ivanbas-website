@@ -1,8 +1,0 @@
-/node_modules
-/vendor
-/public/*
-!/public/.gitkeep
-.env
-npm-debug.log
-ivanbas.local*
-mkcert.exe
