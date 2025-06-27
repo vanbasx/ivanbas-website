@@ -17,5 +17,9 @@
 }
 
 .container {
-  @apply px-8 max-lg:px-5 max-w-full;
+  @apply px-8 max-lg:px-4 max-w-full;
+}
+
+.title {
+  @apply font-bold text-[40px]/12 max-xl:text-3xl/10 uppercase tracking-tight max-xs:text-2xl;
 }

@@ -153,3 +153,17 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+
+
+remove_action( 'wp_head', 'start_post_rel_link', 10 );
+remove_action( 'wp_head', 'wp_generator' );
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'wp_head', 'feed_links_extra' );
+remove_action( 'wp_head', 'feed_links' );
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'index_rel_link' );
+remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+remove_action( 'wp_enqueue_scripts', 'wp_enqueue_classic_theme_styles' );
