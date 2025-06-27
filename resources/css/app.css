@@ -1,3 +1,21 @@
 @import "tailwindcss" theme(static);
 @source "../views/";
 @source "../../app/";
+@import "./fonts.css";
+
+@theme {
+  --font-sans: "Inter Display", sans-serif;
+
+  --breakpoint-*: initial;
+  --breakpoint-xs: 390px;
+  --breakpoint-sm: 500px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+
+  --index: calc(1vw + 1vh);
+}
+
+.container {
+  @apply px-8 max-lg:px-5 max-w-full;
+}
