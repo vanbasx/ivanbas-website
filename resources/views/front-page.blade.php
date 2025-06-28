@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="mb-25 max-sm:mb-10 max-xl:mb-14 pt-13 pb-18 max-md:pb-10 max-xl:pb-12 border-zinc-300 border-b">
+  <section class="mb-25 max-sm:mb-10 max-xl:mb-14 pt-13 pb-18 max-md:pb-10 max-xl:pb-12 border-zinc-400 border-b">
     <div class="container">
       <svg class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20" id="hero-svg" viewBox="0 0 206 16" xmlns="http://www.w3.org/2000/svg">
         <foreignObject width="100%" height="100%">
@@ -19,31 +19,29 @@
   </section>
   <section class="mb-25">
     <div class="container">
-      <div class="max-sm:flex gap-5 grid grid-cols-6 mb-25 max-sm:mb-10 max-xl:mb-14">
+      <div class="max-sm:flex max-sm:justify-between gap-5 grid grid-cols-6 mb-25 max-sm:mb-10 max-xl:mb-14">
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
           Selected Works
         </h2>
-        <div class="col-span-4 max-xl:col-span-2">
-          <a href="#" class="text-zinc-600 max-sm:text-sm max-xl:text-base text-xl/6 text-nowrap">
-            [4] View all
-          </a>
-        </div>
+        <a href="#" class="col-span-4 max-xl:col-span-2 w-fit text-zinc-600 text-nowrap subtitle">
+          [4] View all
+        </a>
       </div>
       <div class="gap-5 grid grid-cols-2 max-xl:grid-cols-1">
         @for ($i = 0; $i < 2; $i++)
-        <article class="pb-10 max-sm:pb-5">
-          <div class="bg-zinc-200 mb-5 max-sm:mb-3 w-full aspect-[16/10] max-md:aspect-[4/3]">
-            
+        <article class="group/card relative">
+          <div class="bg-zinc-300 aspect-[16/10] max-md:aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="{{ Vite::asset('resources/images/test.webp') }}" alt="">
           </div>
-          <div class="flex max-xl:justify-between gap-5">
-            <a href="" class="text-zinc-900 max-sm:text-sm max-xl:text-base text-xl/6">
+          <div class="flex max-xl:justify-between gap-5 py-5 max-sm:py-3">
+            <a href="" class="before:top-0 before:left-0 before:absolute before:w-full before:h-full text-zinc-900 subtitle">
               DZDZ
             </a>
-            <span class="text-zinc-600 max-sm:text-sm max-xl:text-base text-xl/6">
+            <span class="text-zinc-600 subtitle">
               Education
             </span>
-            <span class="text-zinc-600 max-sm:text-sm max-xl:text-base text-xl/6">
-              2024
+            <span class="text-zinc-600 subtitle">
+              2025
             </span>
           </div>
         </article>

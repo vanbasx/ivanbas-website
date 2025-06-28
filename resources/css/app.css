@@ -23,3 +23,7 @@
 .title {
   @apply font-bold text-[40px]/12 max-xl:text-3xl/10 uppercase tracking-tight max-xs:text-2xl;
 }
+
+.subtitle {
+  @apply max-sm:text-sm max-xl:text-base text-xl/6;
+}
