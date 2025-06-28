@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="mb-25 max-sm:mb-10 max-xl:mb-14 pt-13 pb-18 max-md:pb-10 max-xl:pb-12 border-zinc-400 border-b">
+  <section class="pt-13 pb-18 max-md:pb-10 max-xl:pb-12 border-zinc-400 border-b">
     <div class="container">
       <svg class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20" id="hero-svg" viewBox="0 0 206 16" xmlns="http://www.w3.org/2000/svg">
         <foreignObject width="100%" height="100%">
@@ -19,7 +19,7 @@
   </section>
   <section class="mb-25">
     <div class="container">
-      <div class="max-sm:flex max-sm:justify-between gap-5 grid grid-cols-6 mb-25 max-sm:mb-10 max-xl:mb-14">
+      <div class="max-sm:flex max-sm:justify-between gap-5 grid grid-cols-6 py-25 max-sm:py-10 max-xl:py-14">
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
           Selected Works
         </h2>
