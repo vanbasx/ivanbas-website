@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class('bg-zinc-200 text-zinc-900 overflow-x-hidden'))>
+  <body @php(body_class('bg-zinc-200 text-zinc-900 overflow-x-hidden mt-16'))>
     @php(wp_body_open())
 
     <div id="app">

@@ -11,9 +11,9 @@ function setupResponsiveViewBoxHeroText() {
 
   const update = () => {
     if (window.innerWidth < 1200) {
-      svg.setAttribute("viewBox", "0 0 122 32");
+      svg.setAttribute("viewBox", "0 0 119 32");
     } else {
-      svg.setAttribute("viewBox", "0 0 206 16");
+      svg.setAttribute("viewBox", "0 0 210 16");
     }
   };
 
@@ -22,3 +22,4 @@ function setupResponsiveViewBoxHeroText() {
 }
 
 setupResponsiveViewBoxHeroText();
+
