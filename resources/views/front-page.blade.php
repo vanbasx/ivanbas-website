@@ -17,7 +17,7 @@
       </ul>
     </div>
   </section>
-  <section class="mb-25">
+  <section class="mb-30 max-sm:mb-24">
     <div class="container">
       <div class="max-sm:flex max-sm:justify-between gap-5 grid grid-cols-6 py-25 max-sm:py-10 max-xl:py-14">
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
@@ -46,6 +46,24 @@
           </div>
         </article>
         @endfor
+      </div>
+    </div>
+  </section>
+  <section class="mb-30">
+    <div class="gap-5 grid grid-cols-6 container">
+      <span class="col-span-2 uppercase subtitle">
+        Wrocław, Poland
+      </span>
+      <span class="max-md:hidden col-span-1 text-zinc-600 subtitle">
+        © 2025
+      </span>
+      <div class="col-span-3 max-md:col-span-4">
+        <h3 class="mb-2.5 text-zinc-600 uppercase subtitle">
+          Info
+        </h3>
+        <p class="text-pretty subtitle">
+          I bring a dynamic and purpose-driven approach to WordPress development, focusing on building custom websites and solutions that clearly communicate a brand’s essence through seamless functionality, performance, and user experience.
+        </p>
       </div>
     </div>
   </section>
