@@ -53,7 +53,7 @@
       </div>
     </div>
   </section>
-  <section class="mb-30">
+  <section class="mb-30 max-sm:mb-24">
     <div class="gap-5 grid grid-cols-6 container">
       <span class="col-span-2 uppercase subtitle">
         Wrocław, Poland

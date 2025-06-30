@@ -167,3 +167,9 @@ remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'index_rel_link' );
 remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
 remove_action( 'wp_enqueue_scripts', 'wp_enqueue_classic_theme_styles' );
+
+add_action( 'wp_enqueue_scripts', function() {
+    if ( ! is_user_logged_in() ) {
+        wp_dequeue_style( 'wp-block-library' );
+    }
+}, 20 );
