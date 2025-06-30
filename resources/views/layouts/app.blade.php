@@ -14,7 +14,7 @@
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Bold.woff2') }}" as="font" type="font/woff2" crossorigin="">
   </head>
 
-  <body @php(body_class('bg-zinc-900 text-zinc-50 overflow-x-hidden mt-16 max-sm:mt-8'))>
+  <body @php(body_class('bg-zinc-950 text-zinc-100 overflow-x-hidden mt-16 max-sm:mt-8'))>
     @php(wp_body_open())
 
     <div id="app">

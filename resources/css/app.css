@@ -27,3 +27,7 @@
 .subtitle {
   @apply max-sm:text-sm max-xl:text-base text-xl/6;
 }
+
+body {
+  @apply selection:bg-red-500 selection:text-zinc-950
+}
