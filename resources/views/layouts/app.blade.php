@@ -7,9 +7,14 @@
     @php(wp_head())
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Light.woff2') }}" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Regular.woff2') }}" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-SemiBold.woff2') }}" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Bold.woff2') }}" as="font" type="font/woff2" crossorigin="">
   </head>
 
-  <body @php(body_class('bg-zinc-200 text-zinc-900 overflow-x-hidden mt-16'))>
+  <body @php(body_class('bg-zinc-900 text-zinc-50 overflow-x-hidden mt-16 max-sm:mt-8'))>
     @php(wp_body_open())
 
     <div id="app">
