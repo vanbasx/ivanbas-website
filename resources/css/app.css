@@ -31,3 +31,12 @@
 body {
   @apply selection:bg-red-500 selection:text-zinc-950
 }
+
+
+/* Bottom footer */
+#wrapper {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+}
