@@ -1,11 +1,12 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+
 import.meta.glob([
   '../images/**',
   '../fonts/**',
 ]);
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 
 function setupResponsiveViewBoxHeroText() {
@@ -25,6 +26,8 @@ function setupResponsiveViewBoxHeroText() {
 }
 
 setupResponsiveViewBoxHeroText();
+
+
 
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function(event){
@@ -47,3 +50,36 @@ document.addEventListener("DOMContentLoaded", function(event){
   }, false);
 
 });
+
+
+
+function initMenu() {
+  const btn = document.querySelector('#menu-btn');
+  const menu = document.querySelector('#menu');
+  const html = document.documentElement;
+
+  function closeMenuForMobile() {
+    if (window.innerWidth > 1024) {
+      menu.classList.add('max-lg:hidden');
+      menu.classList.remove('touch-none');
+      html.classList.remove('overflow-hidden');
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('max-lg:hidden');
+    menu.classList.toggle('touch-none');
+    html.classList.toggle('overflow-hidden');
+  });
+
+  window.addEventListener('resize', closeMenuForMobile);
+}
+
+initMenu();
+
+
+
+
+document.addEventListener('dblclick', function(event) {
+  event.preventDefault();
+}, { passive: false });
