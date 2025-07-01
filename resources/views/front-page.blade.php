@@ -66,7 +66,7 @@
           Info
         </h3>
         <p class="text-pretty subtitle">
-          I build high-performance, user-friendly WordPress solutions with a focus on clean, custom-coded architecture — not no-code shortcuts. I use the Roots stack (<x-link href="https://roots.io/bedrock/">Bedrock</x-link>, <x-link href="https://roots.io/sage/">Sage</x-link>) for a modern, scalable workflow and <x-link href="https://gsap.com/">GSAP</x-link> for smooth, engaging UX. My approach to performance is based on proven optimization techniques I’ve refined through years of hands-on experience.
+          I build high-performance, user-friendly WordPress solutions with a focus on clean, custom-coded architecture — not no-code shortcuts. I use the Roots stack (<x-link href="https://roots.io/bedrock/" blank="true">Bedrock</x-link>, <x-link href="https://roots.io/sage/" blank="true">Sage</x-link>) for a modern, scalable workflow and <x-link href="https://gsap.com/" blank="true">GSAP</x-link> for smooth, engaging UX. My approach to performance is based on proven optimization techniques I’ve refined through years of hands-on experience.
         </p>
       </div>
     </div>
