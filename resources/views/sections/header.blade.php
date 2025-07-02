@@ -7,12 +7,12 @@
       </span>
       hello@ivanbas.dev
     </a>
-    <nav id="menu" class="max-lg:hidden max-lg:top-0 max-lg:left-0 max-lg:fixed col-span-4 bg-zinc-950 max-lg:w-full max-lg:h-full">
-      <ul class="max-lg:flex max-lg:flex-col lg:gap-5 grid grid-cols-4 max-lg:pt-20">
-        <li class="lg:border-zinc-700 lg:border-l"><a href="" class="block max-lg:inline-block lg:py-5 pl-5 max-lg:pl-4 font-medium text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl uppercase transition-colors duration-300">Home</a></li>
-        <li class="lg:border-zinc-700 lg:border-l"><a href="" class="block max-lg:inline-block lg:py-5 pl-5 max-lg:pl-4 font-medium text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl uppercase transition-colors duration-300">Works</a></li>
-        <li class="lg:border-zinc-700 lg:border-l"><a href="" class="block max-lg:inline-block lg:py-5 pl-5 max-lg:pl-4 font-medium text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl uppercase transition-colors duration-300">Blog</a></li>
-        <li class="lg:border-zinc-700 lg:border-l"><a href="" class="block max-lg:inline-block lg:py-5 pl-5 max-lg:pl-4 font-medium text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl uppercase transition-colors duration-300">Resume</a></li>
+    <nav id="menu" class="max-lg:top-0 max-lg:left-0 max-lg:fixed col-span-4 bg-zinc-950 max-lg:px-4 max-lg:w-full max-lg:h-0 max-lg:overflow-hidden max-lg:touch-none">
+      <ul class="max-lg:flex max-lg:flex-col gap-5 max-lg:gap-2.5 lg:grid lg:grid-cols-4 max-lg:py-32">
+        <li class="lg:border-zinc-700 lg:border-l max-lg:overflow-hidden"><a href="" class="menu-item">Home</a></li>
+        <li class="lg:border-zinc-700 lg:border-l max-lg:overflow-hidden"><a href="" class="menu-item">Works</a></li>
+        <li class="lg:border-zinc-700 lg:border-l max-lg:overflow-hidden"><a href="" class="menu-item">Blog</a></li>
+        <li class="lg:border-zinc-700 lg:border-l max-lg:overflow-hidden"><a href="" class="menu-item">Resume</a></li>
       </ul>
     </nav>
     <button id="menu-btn" class="lg:hidden z-10 text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm uppercase transition-colors duration-300 ease-in-out cursor-pointer">
