@@ -23,7 +23,7 @@
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
           Selected Works
         </h2>
-        <a href="/works" class="col-span-4 max-xl:col-span-2 w-fit h-fit text-zinc-400 hover:text-zinc-50 text-nowrap transition-colors subtitle">
+        <a href="/works" class="col-span-4 max-xl:col-span-2 w-fit h-fit text-zinc-400 hover:text-zinc-50 active:text-zinc-50 text-nowrap transition-colors subtitle">
           [4] View all
         </a>
       </div>
@@ -35,6 +35,8 @@
               class="group-hover/card:brightness-50 w-full h-full object-cover transition-all"
               src="{{ Vite::asset('resources/images/test.webp') }}" 
               alt=""
+              loading="lazy"
+              fetchpriority="high"
             >
           </div>
           <div class="flex max-xl:justify-between gap-5 py-5 max-sm:py-3">
@@ -66,7 +68,7 @@
           Info
         </h3>
         <p class="text-pretty subtitle">
-          I build high-performance, user-friendly WordPress solutions with a focus on clean, custom-coded architecture — not no-code shortcuts. I use the Roots stack (<x-link href="https://roots.io/bedrock/" blank="true">Bedrock</x-link>, <x-link href="https://roots.io/sage/" blank="true">Sage</x-link>) for a modern, scalable workflow and <x-link href="https://gsap.com/" blank="true">GSAP</x-link> for smooth, engaging UX. My approach to performance is based on proven optimization techniques I’ve refined through years of hands-on experience.
+          I build high-performance, user-friendly WordPress solutions with a focus on clean, custom-coded architecture — not no-code shortcuts. I use the Roots stack (<x-link href="https://roots.io/bedrock/" blank="true">Bedrock</x-link>, <x-link href="https://roots.io/sage/" blank="true">Sage</x-link>) with <x-link href="https://tailwindcss.com/" blank="true">TailwindCSS</x-link> for a modern, scalable workflow and <x-link href="https://gsap.com/" blank="true">GSAP</x-link> for smooth, engaging UX. My approach to performance is based on proven optimization techniques I’ve refined through years of hands-on experience.
         </p>
       </div>
     </div>
