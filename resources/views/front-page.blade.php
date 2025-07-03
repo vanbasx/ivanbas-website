@@ -23,7 +23,7 @@
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
           Selected Works
         </h2>
-        <a href="/works" class="col-span-4 max-xl:col-span-2 w-fit h-fit text-zinc-400 hover:text-zinc-50 text-nowrap transition-colors duration-300 ease-in-out subtitle">
+        <a href="/works" class="col-span-4 max-xl:col-span-2 w-fit h-fit text-zinc-400 hover:text-zinc-50 text-nowrap transition-colors subtitle">
           [4] View all
         </a>
       </div>
@@ -32,7 +32,7 @@
         <article class="group/card relative">
           <div class="bg-zinc-800/25 aspect-[16/10] max-md:aspect-[4/3] overflow-hidden">
             <img 
-              class="group-hover/card:brightness-50 w-full h-full object-cover transition-all duration-400 ease-in-out"
+              class="group-hover/card:brightness-50 w-full h-full object-cover transition-all"
               src="{{ Vite::asset('resources/images/test.webp') }}" 
               alt=""
             >

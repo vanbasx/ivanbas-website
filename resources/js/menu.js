@@ -5,54 +5,51 @@ export default function initMenu() {
   const menuContainer = document.querySelector('#menu');
   const menuLinks = menuContainer.querySelectorAll('a');
 
-  // Таймлайн GSAP, изначально на паузе
-  const timeline = gsap.timeline({ paused: true });
+  const tl = gsap.timeline({ paused: true });
+  const mm = gsap.matchMedia();
 
-  // Блокировка скролла при открытом меню
-  timeline.to('html', {
-    duration: 0.1,
-    overflow: 'hidden',
-    ease: 'none',
+  mm.add("(max-width: 1023px)", () => {
+    tl.to('html', {
+      duration: 0.1,
+      overflow: 'hidden',
+      ease: 'none',
+    });
+
+    tl.to(menu, {
+      duration: 0.1,
+      visibility: 'visible',
+      ease: 'expo.inOut',
+    });
+
+    tl.to("header", {
+      duration: 1.5,
+      height: '100%',
+      ease: 'expo.inOut',
+      onReverseComplete: () => {
+        gsap.set("header", { clearProps: "height" });
+      }
+    });
+
+    tl.fromTo(menuLinks, {
+      y: 100,
+      opacity: 0,
+    }, {
+      duration: 1.5,
+      y: 0,
+      opacity: 1,
+      stagger: 0.2,
+      ease: 'expo.out',
+    }, '-=1');
+
+    tl.reverse();
+
+    return () => { // optional
+      // custom cleanup code here (runs when it STOPS matching)
+    };
   });
 
-  // Анимация раскрытия контейнера меню
-  timeline.to(menuContainer, {
-    duration: 1.5,
-    height: '100%',
-    ease: 'expo.inOut',
+  menuButton.addEventListener('click', () => {
+    const isReversed = tl.reversed();
+    tl.reversed(!isReversed);
   });
-
-  // Анимация появления ссылок с задержкой
-  timeline.to(menuLinks, {
-    duration: 1.5,
-    y: 0,
-    stagger: 0.2,
-    ease: 'expo.out',
-  }, '-=1');
-
-  // Изначально скрыто (реверсим сразу)
-  timeline.reverse();
-
-  // Обработчик клика по кнопке меню
-  const toggleMenu = () => {
-    const isReversed = timeline.reversed();
-    timeline.reversed(!isReversed);
-  };
-  menuButton.addEventListener('click', toggleMenu);
-
-  // Сброс анимации и стилей при смене ширины экрана
-  const desktopQuery = window.matchMedia('(min-width: 1024px)');
-
-  const resetAnimation = (e) => {
-    if (e.matches) {
-      // На десктопе сбрасываем стили анимации
-      timeline.pause(0).reverse();
-      gsap.set(menuContainer, { clearProps: 'height' });
-      gsap.set(menuLinks, { clearProps: 'y' });
-      gsap.set('html', { clearProps: 'overflowY' });
-    }
-  };
-
-  desktopQuery.addEventListener('change', resetAnimation);
-  resetAnimation(desktopQuery);
 }

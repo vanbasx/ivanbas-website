@@ -4,10 +4,10 @@
       <span class="text-zinc-400">© 2025</span> All rights reserved
     </div>
     <ul class="flex max-md:flex-col items-center max-md:items-start gap-5 max-md:gap-3 max-md:col-span-2 py-5">
-      <li><a target="_blank" href="https://www.linkedin.com/in/ivan-bas" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors duration-300 ease-in-out">LinkedIn</a></li>
-      <li><a target="_blank" href="https://github.com/vanbasx" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors duration-300 ease-in-out">GitHub</a></li>
-      <li><a target="_blank" href="#" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors duration-300 ease-in-out">Codepen</a></li>
-      <li><a target="_blank" href="#" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors duration-300 ease-in-out">Resume</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/ivan-bas" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors">LinkedIn</a></li>
+      <li><a target="_blank" href="https://github.com/vanbasx" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors">GitHub</a></li>
+      <li><a target="_blank" href="#" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors">Codepen</a></li>
+      <li><a target="_blank" href="#" class="inline-block text-zinc-400 hover:text-zinc-50 max-sm:text-sm transition-colors">Resume</a></li>
     </ul>
   </div>
 </footer>
