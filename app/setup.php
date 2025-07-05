@@ -155,7 +155,11 @@ add_action('widgets_init', function () {
 });
 
 
-
+/**
+ * Clean the website head.
+ *
+ * @return void
+ */
 remove_action( 'wp_head', 'start_post_rel_link', 10 );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -173,3 +177,48 @@ add_action( 'wp_enqueue_scripts', function() {
         wp_dequeue_style( 'wp-block-library' );
     }
 }, 20 );
+
+
+/**
+ * Register the theme cpt 'Works'.
+ *
+ * @return void
+ */
+add_action( 'init', function () {
+    register_post_type('works',
+        array(
+            'labels' => array(
+                'name' => 'Works',
+                'singular_name' => 'Work',
+            ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-portfolio',
+        'menu_position' => 5,
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'excerpt'
+        ),
+        'show_in_rest' => true
+        )
+    );
+});
+
+
+/**
+ * Update image sizes.
+ *
+ * @return void
+ */
+add_filter('intermediate_image_sizes_advanced', function($sizes) {
+    unset($sizes['medium']);
+    unset($sizes['medium_large']);
+    unset($sizes['large']);
+    unset($sizes['1536x1536']);
+    unset($sizes['2048x2048']);
+    return $sizes;
+});
+
+add_image_size('mobile', 1024, 0, false);
