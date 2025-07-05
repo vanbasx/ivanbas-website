@@ -28,30 +28,14 @@
         </a>
       </div>
       <div class="gap-5 grid grid-cols-2 max-xl:grid-cols-1">
-        @for ($i = 0; $i < 2; $i++)
-        <article class="group/card relative">
-          <div class="bg-zinc-800/25 aspect-[16/10] max-md:aspect-[4/3] overflow-hidden">
-            <img 
-              class="group-hover/card:brightness-50 w-full h-full object-cover transition-all"
-              src="{{ Vite::asset('resources/images/test.webp') }}" 
-              alt=""
-              loading="lazy"
-              fetchpriority="high"
-            >
-          </div>
-          <div class="flex max-xl:justify-between gap-5 py-5 max-sm:py-3">
-            <a href="" class="before:top-0 before:left-0 before:absolute before:w-full before:h-full subtitle">
-              DZDZ
-            </a>
-            <span class="text-zinc-400 subtitle">
-              Education
-            </span>
-            <span class="text-zinc-400 subtitle">
-              2025
-            </span>
-          </div>
-        </article>
-        @endfor
+        {{-- Show cases --}}
+        @if ($works->have_posts())
+          @while ($works->have_posts()) @php($works->the_post())
+            @include('partials.work')
+          @endwhile
+          @php(wp_reset_postdata())
+        @endif
+        {{-- /Show cases --}}
       </div>
     </div>
   </section>
