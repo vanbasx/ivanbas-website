@@ -18,11 +18,11 @@
 <svg
   data-responsive-text
   @if($class) class="{{ $class }}" @endif
-  @if($desktop) data-size-desktop="{{ $desktop }}" @endif
-  @if($mobile) 
-    viewBox="{{ $mobile }}"
-    data-size-mobile="{{ $mobile }}"
+  @if($desktop) 
+    viewBox="{{ $desktop }}"
+    data-size-desktop="{{ $desktop }}"
   @endif
+  @if($mobile) data-size-mobile="{{ $mobile }}" @endif
   xmlns="http://www.w3.org/2000/svg"
 >
   <foreignObject width="100%" height="100%">

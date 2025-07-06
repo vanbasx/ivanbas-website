@@ -26,7 +26,11 @@
           Selected Works
         </h2>
         <a href="/works" class="col-span-4 max-xl:col-span-2 w-fit h-fit text-zinc-400 hover:text-zinc-50 active:text-zinc-50 text-nowrap transition-colors subtitle">
-          [4] View all
+          @isset($works_total)
+            @if ($works_total > 0) [{{ $works_total }}] @endif View all
+          @else
+            View all
+          @endisset
         </a>
       </div>
       <div class="gap-5 grid grid-cols-2 max-xl:grid-cols-1">

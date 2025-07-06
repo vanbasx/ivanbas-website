@@ -43,5 +43,5 @@ body {
 }
 
 .menu-item {
-  @apply block max-lg:inline-block lg:py-5 lg:pl-5 text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl/none uppercase transition-colors lg:font-medium;
+  @apply block max-lg:inline-block lg:py-5 lg:pl-5 text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-lg:text-6xl/none uppercase transition-colors ;
 }

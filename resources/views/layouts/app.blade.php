@@ -10,7 +10,7 @@
 
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Light.woff2') }}" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Regular.woff2') }}" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Medium.woff2') }}" as="font" type="font/woff2" crossorigin="">
+    {{-- <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Medium.woff2') }}" as="font" type="font/woff2" crossorigin=""> --}}
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Bold.woff2') }}" as="font" type="font/woff2" crossorigin="">
   </head>
 

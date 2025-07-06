@@ -9,13 +9,13 @@ class FrontPage extends Composer
 {
     protected static $views = [
       'front-page',
-      'archive-works'
     ];
 
     public function with(): array
     {
       return [
         'works' => $this->getWorks(),
+        'works_total' => $this->getTotalWorksCount(),
         // 'blog' => $this->getBlog(),
       ];
     }
@@ -26,5 +26,11 @@ class FrontPage extends Composer
         'post_type' => 'works',
         'posts_per_page' => 2,
       ]);
+    }
+
+    protected function getTotalWorksCount(): int
+    {
+      $count = wp_count_posts('works');
+      return (int) $count->publish;
     }
 }
