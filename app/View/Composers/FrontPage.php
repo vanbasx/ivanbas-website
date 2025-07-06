@@ -9,6 +9,7 @@ class FrontPage extends Composer
 {
     protected static $views = [
       'front-page',
+      'archive-works'
     ];
 
     public function with(): array

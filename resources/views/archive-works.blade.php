@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="pt-12">
+  <section class="pt-12 max-sm:pt-5">
     <div class="container">
       <x-responsive-text 
-        class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20"
         desktop="0 0 128 16"
         mobile="0 0 133 16"
       >
@@ -12,6 +11,20 @@
           Archive Works
         </h1>
       </x-responsive-text>
+    </div>
+  </section>
+  <section class="my-30 max-sm:my-24">
+    <div class="container">
+      <div class="gap-5 grid grid-cols-2 max-xl:grid-cols-1">
+        {{-- Show cases --}}
+        @if (have_posts())
+          @while (have_posts()) @php(the_post())
+            @include('partials.work')
+          @endwhile
+          @php(wp_reset_postdata())
+        @endif
+        {{-- /Show cases --}}
+      </div>
     </div>
   </section>
 @endsection

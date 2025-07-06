@@ -20,7 +20,7 @@
     <div id="app">
       @include('sections.header')
       <div id="wrapper">
-        <main id="main" class="mt-16 max-sm:mt-8">
+        <main id="main" class="mt-16 max-sm:mt-15">
           @yield('content')
         </main>
 

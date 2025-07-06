@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="pt-12 pb-20 max-md:pb-10 max-xl:pb-12 border-zinc-700 border-b">
+  <section class="pt-12 max-sm:pt-5 pb-20 max-md:pb-10 max-xl:pb-12 border-zinc-700 border-b">
     <div class="container">
       <x-responsive-text 
         class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20"
