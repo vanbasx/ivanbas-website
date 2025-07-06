@@ -3,13 +3,15 @@
 @section('content')
   <section class="pt-12 pb-20 max-md:pb-10 max-xl:pb-12 border-zinc-700 border-b">
     <div class="container">
-      <svg class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20" id="hero-svg" viewBox="0 0 210 16" xmlns="http://www.w3.org/2000/svg">
-        <foreignObject width="100%" height="100%">
-          <h1 class="font-bold uppercase text-nowrap leading-none xl:tracking-tight">
-            Ivan Bas <span class="font-light text-zinc-400">©</span> <br class="xl:hidden"> Web Developer
-          </h1>
-        </foreignObject>
-      </svg>
+      <x-responsive-text 
+        class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20"
+        desktop="0 0 210 16"
+        mobile="0 0 123 32"
+      >
+        <h1 class="font-bold uppercase text-nowrap leading-none xl:tracking-tight">
+          Ivan Bas <span class="font-light text-zinc-400">©</span> <br class="xl:hidden"> WP Developer
+        </h1>
+      </x-responsive-text>
       <ul class="max-sm:text-sm max-md:text-base/5 max-xl:text-lg/5 text-xl/6">
         <li>WooCommerce</li>
         <li>WordPress Development</li>

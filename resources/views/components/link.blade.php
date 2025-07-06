@@ -1,3 +1,10 @@
+{{-- 
+  Component: link
+
+  @param string|null $href link.
+  @param bool $blank.
+--}}
+
 @props([
   'href' => null,
   'blank' => false,

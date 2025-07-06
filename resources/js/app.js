@@ -7,7 +7,7 @@ import.meta.glob([
   '../fonts/**',
 ]);
 
-import initResponsiveViewBoxHeroText from "./heroResponsiveText";
+import responsiveText from "./responsiveText";
 import initMenu from "./menu";
 
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     effects: true
   });
 
-  initResponsiveViewBoxHeroText();
+  responsiveText();
   initMenu();
 
   console.log("window loaded");
