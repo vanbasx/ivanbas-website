@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function(event){
     wrapper: "#app",
     content: "#wrapper",
     smooth: 1.5,
-    effects: true
   });
 
   responsiveText();

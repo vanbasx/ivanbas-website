@@ -14,13 +14,13 @@
   src: url(../fonts/InterDisplay-Regular.woff2) format("woff2");
 }
 
-/* @font-face {
+@font-face {
   font-family: "Inter Display";
   font-style: "normal";
-  font-weight: 500;
+  font-weight: 600;
   font-display: swap;
-  src: url(../fonts/InterDisplay-Medium.woff2) format("woff2");
-} */
+  src: url(../fonts/InterDisplay-SemiBold.woff2) format("woff2");
+}
 
 @font-face {
   font-family: "Inter Display";
