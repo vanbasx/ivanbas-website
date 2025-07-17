@@ -1,0 +1,44 @@
+{
+  "editor.deps.json": {
+    "file": "assets/editor.deps-DxpY22xl.json",
+    "src": "editor.deps.json"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-Bbkh3JDc.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/editor.css": {
+    "file": "assets/editor-DA2Y7cC7.css",
+    "src": "resources/css/editor.css",
+    "isEntry": true
+  },
+  "resources/fonts/InterDisplay-Bold.woff2": {
+    "file": "assets/InterDisplay-Bold-CzgHmmpO.woff2",
+    "src": "resources/fonts/InterDisplay-Bold.woff2"
+  },
+  "resources/fonts/InterDisplay-Light.woff2": {
+    "file": "assets/InterDisplay-Light-4LaiHznZ.woff2",
+    "src": "resources/fonts/InterDisplay-Light.woff2"
+  },
+  "resources/fonts/InterDisplay-Regular.woff2": {
+    "file": "assets/InterDisplay-Regular-BVkQfLn_.woff2",
+    "src": "resources/fonts/InterDisplay-Regular.woff2"
+  },
+  "resources/fonts/InterDisplay-SemiBold.woff2": {
+    "file": "assets/InterDisplay-SemiBold-Co5yAeTE.woff2",
+    "src": "resources/fonts/InterDisplay-SemiBold.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CnUJ2Nv1.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/editor.js": {
+    "file": "assets/editor-CfU4GbSP.js",
+    "name": "editor",
+    "src": "resources/js/editor.js",
+    "isEntry": true
+  }
+}
