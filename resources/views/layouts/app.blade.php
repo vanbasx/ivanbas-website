@@ -10,11 +10,11 @@
 
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Light.woff2') }}" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Regular.woff2') }}" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Medium.woff2') }}" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-SemiBold.woff2') }}" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="{{ Vite::asset('resources/fonts/InterDisplay-Bold.woff2') }}" as="font" type="font/woff2" crossorigin="">
   </head>
 
-  <body @php(body_class('bg-zinc-950 text-zinc-100 overflow-x-hidden'))>
+  <body @php(body_class('bg-black text-white overflow-x-hidden'))>
     @php(wp_body_open())
 
     <div id="app">

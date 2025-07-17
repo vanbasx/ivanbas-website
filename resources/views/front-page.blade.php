@@ -1,26 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="pt-12 max-sm:pt-5 pb-20 max-md:pb-10 max-xl:pb-12 border-zinc-700 border-b">
+  <section class="pt-12 max-sm:pt-5 pb-20 max-md:pb-10 max-xl:pb-12 border-zinc-800 border-b">
     <div class="container">
-      <x-responsive-text 
-        class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20"
-        desktop="0 0 210 16"
-        mobile="0 0 123 32"
-      >
-        <h1 class="font-bold uppercase text-nowrap leading-none xl:tracking-tight">
-          Ivan Bas <span class="font-light text-zinc-400">©</span> <br class="xl:hidden"> WP Developer
-        </h1>
-      </x-responsive-text>
-      <ul class="max-sm:text-sm max-md:text-base/5 max-xl:text-lg/5 text-xl/6">
-        <li>WooCommerce</li>
-        <li>WordPress Development</li>
-        <li>SEO Optimization</li>
-      </ul>
+      <div class="overflow-clip">
+        <x-responsive-text 
+          id="hero-title"
+          class="mb-25 max-sm:mb-10 max-md:mb-15 max-xl:mb-20"
+          desktop="0 0 210 16"
+          mobile="0 0 123 32"
+        >
+          <h1 class="font-bold uppercase text-nowrap leading-none xl:tracking-tight">
+            Ivan Bas <span class="font-light text-zinc-400">©</span> <br class="xl:hidden"> WP Developer
+          </h1>
+        </x-responsive-text>
+      </div>
+      <div class="overflow-clip">
+        <ul id="list" class="max-sm:text-sm max-md:text-base/5 max-xl:text-lg/5 text-xl/6">
+          <li>WooCommerce</li>
+          <li>WordPress Development</li>
+          <li>SEO Optimization</li>
+        </ul>
+      </div>
     </div>
   </section>
-  <section class="mb-30 max-sm:mb-24">
-    <div class="container">
+  <section class="mb-30 max-sm:mb-24 overflow-clip">
+    <div id="works" class="container">
       <div class="max-sm:flex max-sm:justify-between gap-5 grid grid-cols-6 py-25 max-sm:py-10 max-xl:py-14">
         <h2 class="col-span-2 max-xl:col-span-4 max-sm:col-start-auto title">
           Selected Works
@@ -45,8 +50,8 @@
       </div>
     </div>
   </section>
-  <section class="mb-30 max-sm:mb-24">
-    <div class="gap-5 grid grid-cols-6 container">
+  <section class="mb-30 max-sm:mb-24 overflow-clip">
+    <div id="info" class="gap-5 grid grid-cols-6 container">
       <span class="col-span-2 uppercase subtitle">
         Wrocław, Poland
       </span>

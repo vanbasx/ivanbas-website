@@ -7,34 +7,37 @@ import.meta.glob([
   '../fonts/**',
 ]);
 
-import responsiveText from "./responsiveText";
 import initMenu from "./menu";
+import responsiveText from "./responsiveText";
+import initAnimationsHomePage from "./animationsHomePage";
+import initAnimationsWorksPage from "./animationsWorksPage";
+import initAnimationsWorkSinglePage from "./animationsWorkSinglePage";
+import initAnimationsNotFoundPage from "./animationsNotFoundPage";
 
 
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function(event){
 
- console.log("DOM loaded");
+  initAnimationsHomePage();
+  initAnimationsWorksPage();
+  initAnimationsWorkSinglePage();
+  initAnimationsNotFoundPage();
 
- //wait until images, links, fonts, stylesheets, and js is loaded
- window.addEventListener("load", function(e){
+  window.addEventListener("load", function(e){
 
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  ScrollSmoother.create({
-    wrapper: "#app",
-    content: "#wrapper",
-    smooth: 1.5,
-  });
+    ScrollSmoother.create({
+      wrapper: "#app",
+      content: "#wrapper",
+      smooth: 1.5,
+    });
 
-  responsiveText();
-  initMenu();
+    initMenu();
+    responsiveText();
 
-  console.log("window loaded");
   }, false);
-
 });
-
 
 document.addEventListener('dblclick', function(event) {
   event.preventDefault();

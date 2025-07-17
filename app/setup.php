@@ -222,3 +222,30 @@ add_filter('intermediate_image_sizes_advanced', function($sizes) {
 });
 
 add_image_size('mobile', 1024, 0, false);
+
+/**
+ * Disable archive pages.
+ *
+ * @return void
+ */
+add_action('template_redirect', function () {
+    if (is_admin()) {
+        return;
+    }
+
+    if (
+        is_author() ||
+        is_date() ||
+        is_search() ||
+        is_tag() ||
+        is_category()
+    ) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+        nocache_headers();
+
+        echo \Roots\view('404')->render();
+        exit;
+    }
+});

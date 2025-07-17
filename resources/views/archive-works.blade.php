@@ -2,8 +2,9 @@
 
 @section('content')
   <section class="pt-12 max-sm:pt-5">
-    <div class="container">
-      <x-responsive-text 
+    <div class="overflow-clip container">
+      <x-responsive-text
+        id="hero-title"
         desktop="0 0 128 16"
         mobile="0 0 133 16"
       >
@@ -13,8 +14,8 @@
       </x-responsive-text>
     </div>
   </section>
-  <section class="my-30 max-sm:my-24">
-    <div class="container">
+  <section class="my-30 max-sm:my-24 overflow-clip">
+    <div id="works" class="container">
       <div class="gap-5 grid grid-cols-2 max-xl:grid-cols-1">
         {{-- Show cases --}}
         @if (have_posts())

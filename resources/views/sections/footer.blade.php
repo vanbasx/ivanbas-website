@@ -1,6 +1,6 @@
-<footer class="border-zinc-700 border-t">
+<footer class="border-zinc-800 border-t">
   <div class="flex md:justify-between md:items-center gap-5 container">
-    <div class="py-5 pr-8 max-md:border-zinc-700 max-md:border-r max-sm:text-sm">
+    <div class="py-5 pr-8 max-md:border-zinc-800 max-md:border-r max-sm:text-sm">
       <span class="text-zinc-400">© 2025</span> All rights reserved
     </div>
     <ul class="flex max-md:flex-col items-center max-md:items-start gap-5 max-md:gap-4 max-md:col-span-2 py-5">

@@ -8,7 +8,7 @@
           media="(max-width: 500px)"
         />
         <img 
-          class="group-hover/card:brightness-50 w-full h-full object-cover transition-all"
+          class="group-hover/card:opacity-75 w-full h-full object-cover transition-opacity"
           src="{!! the_post_thumbnail_url() !!}" 
           alt=""
           loading="lazy"
@@ -21,7 +21,7 @@
         {{ get_the_title() }}
       </span>
       <span class="text-zinc-400 subtitle">
-        Education
+        {{ get_field('industry') }}
       </span>
       <span class="text-zinc-400 subtitle">
         {{ get_the_date('Y') }}
