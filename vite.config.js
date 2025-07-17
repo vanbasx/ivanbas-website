@@ -6,7 +6,8 @@ import laravel from 'laravel-vite-plugin'
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
-  base: '/wp-content/themes/ivanbas-website/public/build/',
+  // base: '/wp-content/themes/ivanbas-website/public/build/',
+  base: '/app/themes/ivanbas-website/public/build/',
   server: {
     host: 'ivanbas.local',
     https: {
