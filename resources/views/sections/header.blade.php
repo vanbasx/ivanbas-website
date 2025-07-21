@@ -11,7 +11,7 @@
       <ul class="gap-5 max-lg:gap-2.5 grid lg:grid-cols-3 max-lg:py-32">
         <li class="lg:border-zinc-800 lg:border-l max-lg:overflow-clip"><a href="/" class="menu-item">Home</a></li>
         <li class="lg:border-zinc-800 lg:border-l max-lg:overflow-clip"><a href="/works" class="menu-item">Works</a></li>
-        <li class="lg:border-zinc-800 lg:border-l max-lg:overflow-clip"><a href="" class="menu-item">Resume</a></li>
+        <li class="lg:border-zinc-800 lg:border-l max-lg:overflow-clip"><a target="_blank" href="https://ivanbas.dev/app/uploads/2025/07/IVAN-BAS-WORDPRESS-DEV-CV_EN.pdf" class="menu-item">Resume</a></li>
       </ul>
     </nav>
     <button id="menu-btn" class="lg:hidden z-10 text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm uppercase transition-colors cursor-pointer">

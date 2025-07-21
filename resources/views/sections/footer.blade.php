@@ -6,8 +6,8 @@
     <ul class="flex max-md:flex-col items-center max-md:items-start gap-5 max-md:gap-4 max-md:col-span-2 py-5">
       <li><a target="_blank" href="https://www.linkedin.com/in/ivan-bas" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">LinkedIn</a></li>
       <li><a target="_blank" href="https://github.com/vanbasx" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">GitHub</a></li>
-      <li><a target="_blank" href="#" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">Codepen</a></li>
-      <li><a target="_blank" href="#" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">Resume</a></li>
+      {{-- <li><a target="_blank" href="#" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">Codepen</a></li> --}}
+      <li><a target="_blank" href="https://ivanbas.dev/app/uploads/2025/07/IVAN-BAS-WORDPRESS-DEV-CV_EN.pdf" class="block text-zinc-400 hover:text-zinc-50 active:text-zinc-50 max-sm:text-sm transition-colors">Resume</a></li>
     </ul>
   </div>
 </footer>
